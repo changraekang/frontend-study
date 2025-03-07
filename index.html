@@ -3,10 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>점심 메뉴판</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-    <script src="script.js"></script>
+    <header>
+      <h1>점심 메뉴판</h1>
+    </header>
+    <div class="menuContainer">
+      <div class="menuButtons">
+        <button onclick="showMenu('all')">전체메뉴</button>
+        <button onclick="showMenu('korean')">한식</button>
+        <button onclick="showMenu('chinese')">중식</button>
+        <button onclick="showMenu('japanese')">일식</button>
+        <button onclick="showMenu('western')">양식</button>
+      </div>
+      <h2 id="categoryTitle"></h2>
+      <section id="menuItem" class="menuSection">
+        <div class="menuItem"></div>
+      </section>
+    </div>
   </body>
+  <script src="script.js"></script>
 </html>
