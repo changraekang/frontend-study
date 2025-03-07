@@ -16,7 +16,7 @@ class MathQuiz {
     this.currentAnswer = num1 + num2;
 
     // 문제 표시
-    this.question.textContent = `${num1} + ${num2} = ?`;
+    this.question.textContent = `문제: ${num1} + ${num2} = ?`;
 
     // 보기 생성
     const wrongAnswer1 =
